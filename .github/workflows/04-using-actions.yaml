@@ -1,0 +1,14 @@
+name: 04 - Using Actions
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        shell: bash
+        run: git checkout main
+      - name: Printing Folders
+        shell: bash
+        run: ls -l
